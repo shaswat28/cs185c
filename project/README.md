@@ -21,11 +21,12 @@ Step 1: Create the Model Files
 
 Several input files need to be created to run the model. Generate the following list of files using the notebooks indicated in paratheses:
 
-Model Grid (notebooks/Creating the Model Grid.ipynb)
-Bathymetry (notebooks/Creating the Bathymetry.ipynb)
-Initial Conditions (notebooks/Creating the Initial Conditions.ipynb)
-External Forcing Conditions (notebooks/Creating the External Forcing Conditions.ipynb)
-Boundary Conditions (notebooks/Creating the Boundary Conditions.ipynb) The model files should be placed into the  input directory.
+-Model Grid (notebooks/Creating the Model Grid.ipynb)
+-Bathymetry (notebooks/Creating the Bathymetry.ipynb)
+-Initial Conditions (notebooks/Creating the Initial Conditions.ipynb)
+-External Forcing Conditions (notebooks/Creating the External Forcing Conditions.ipynb)
+-Boundary Conditions (notebooks/Creating the Boundary Conditions.ipynb) The model files should be placed into the  input directory.
+
 Step 2: Add files to the computing cluster
 
 Once the input files have been created, the model files can be transferred to the computing cluster. Begin by cloning a copy of MITgcm into your scratch directory and make a folder for the configuration, .e.g.
@@ -38,8 +39,11 @@ Step 3: Compile the model
 Once all of the files are on the computing cluster, the model can be compiled. Make a build directory in the configuration directory and run the following lines:
 
 ../../../tools/genmake2 -of ../../../tools/build_options/darwin_amd64_gfortran -mods ../code -mpi
+
 make depend
+
 make
+
 Step 4.1: Run the model with wind
 
 After the compilation is complete, run the model with the wind. Move to the run directory, link everything from input and code, and then submit the job script:
