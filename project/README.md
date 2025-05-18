@@ -64,9 +64,9 @@ Step 5: Analyze the Results
 
 There are two notebooks provided for analysis:
 
-Analyzing Model Results
+Assessing Model Results
 
-This notebook is provided to have a quick look at spatial and temporal variations in the temperature field in the model with wind. It also generates the visualization provided in the figures directory.
+This notebook is provided to have a quick look at spatial and temporal variations in the temperature field in the model with and without wind. It also generates the visualizations provided in the figures directory, one with wind and one without wind.
 
 Answering the Science Question
 
