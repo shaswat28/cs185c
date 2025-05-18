@@ -70,4 +70,4 @@ This notebook is provided to have a quick look at spatial and temporal variation
 
 Answering the Science Question
 
-This notebooks provided some analysis plot to address the science question posed above.
+This notebook provided some analysis plots to address the science question posed above.
